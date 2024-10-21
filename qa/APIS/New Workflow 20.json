@@ -1,8 +1,9 @@
 {
+  "id" : "671238bd6ca871408bd50acc",
   "cts" : 1729247420724,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1729247420724,
+  "mts" : 1729510264628,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "671238bc6ca871408bd50ac9",
@@ -17,6 +18,9 @@
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
     "source" : "v1",
+    "target" : "0cd0ad64-ec15-4711-bd00-9b4aaadef645"
+  }, {
+    "source" : "0cd0ad64-ec15-4711-bd00-9b4aaadef645",
     "target" : "64f800a5-9605-41dc-a662-c29918f261e1"
   } ],
   "vertexHashMap" : {
@@ -32,6 +36,43 @@
         }
       }
     },
+    "0cd0ad64-ec15-4711-bd00-9b4aaadef645" : {
+      "vertexId" : "0cd0ad64-ec15-4711-bd00-9b4aaadef645",
+      "vertexType" : "TARGET",
+      "name" : "postmanecho",
+      "target" : {
+        "name" : "postmanecho",
+        "description" : "postmanecho",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -45,6 +86,12 @@
     "cts" : 1729247420724,
     "lastModifiedBy" : "divakar v",
     "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "680bfd11475d782d89aa3ca2e7c260ea76896113",
+    "timeStamp" : 1729247420724,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
