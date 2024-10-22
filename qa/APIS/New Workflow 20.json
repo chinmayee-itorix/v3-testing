@@ -3,7 +3,7 @@
   "cts" : 1729247420724,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1729510264628,
+  "mts" : 1729574389370,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "671238bc6ca871408bd50ac9",
@@ -11,9 +11,9 @@
   "name" : "New Workflow 20",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/test/321",
+  "pathArray" : [ "test", "321" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
@@ -78,10 +78,20 @@
       "vertexType" : "START",
       "name" : "Start",
       "requestVariables" : [ ],
-      "imported" : false
+      "imported" : true
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1729574373853,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1729510283626,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "-"
+  }, {
     "status" : "Draft",
     "cts" : 1729247420724,
     "lastModifiedBy" : "divakar v",
@@ -92,8 +102,14 @@
     "timeStamp" : 1729247420724,
     "modifiedBy" : "divakar v",
     "totalNodes" : 2
+  }, {
+    "commitId" : "9dc0cea4fdb159fff87cafee18385b80227198ec",
+    "timeStamp" : 1729510264628,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
   } ],
-  "enableTracing" : false,
+  "virtualHostList" : [ ],
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
   "deleted" : false,
