@@ -1,0 +1,293 @@
+{
+  "id" : "66fbd00644558b0981282156",
+  "cts" : 1727778821355,
+  "createdUserName" : "pranav A",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1729856176608,
+  "createdBy" : "6655a103339aa715119d5a13",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "66fbd00544558b0981282155",
+  "revision" : 1,
+  "name" : "reqres",
+  "description" : "reqres",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/reqres",
+  "pathArray" : [ "reqres" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "d8161318-d34f-43bc-807b-3d7ff0f0d02a",
+    "target" : "61dd975e-2ca0-436d-a473-317894250fe3"
+  }, {
+    "source" : "v1",
+    "target" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0"
+  }, {
+    "source" : "61dd975e-2ca0-436d-a473-317894250fe3",
+    "target" : "8d1503b0-da43-4df0-b4cd-683ab2349af7"
+  }, {
+    "source" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0",
+    "target" : "d8161318-d34f-43bc-807b-3d7ff0f0d02a"
+  } ],
+  "vertexHashMap" : {
+    "d8161318-d34f-43bc-807b-3d7ff0f0d02a" : {
+      "vertexId" : "d8161318-d34f-43bc-807b-3d7ff0f0d02a",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "a1",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "json",
+        "targetVariable" : "xml",
+        "jsonArray" : false,
+        "rootElementName" : "person1",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "61dd975e-2ca0-436d-a473-317894250fe3" : {
+      "vertexId" : "61dd975e-2ca0-436d-a473-317894250fe3",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ {
+        "name" : "jsessionid",
+        "value" : "1234"
+      }, {
+        "name" : "xapikey",
+        "value" : "token123"
+      }, {
+        "name" : "json",
+        "value" : "$",
+        "source" : "raw"
+      } ],
+      "imported" : false
+    },
+    "dcee8a8f-351a-4e7a-b16c-42658c58dcc0" : {
+      "vertexId" : "dcee8a8f-351a-4e7a-b16c-42658c58dcc0",
+      "vertexType" : "TARGET",
+      "name" : "rqeres",
+      "target" : {
+        "name" : "rqeres",
+        "description" : "reqres",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "dev-mock.apiwiz.io",
+          "path" : "/sc-apiwiz/getUser",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-tenant",
+            "value" : "b8e236df-4b26-49ef-9532-5e43ea0c10a4"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "json",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "8d1503b0-da43-4df0-b4cd-683ab2349af7" : {
+      "vertexId" : "8d1503b0-da43-4df0-b4cd-683ab2349af7",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1729856124597,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "r"
+  }, {
+    "status" : "Approved",
+    "cts" : 1729586245011,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1729166112047,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727781995176,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a6"
+  }, {
+    "status" : "Review",
+    "cts" : 1727781391507,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727780686637,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a5"
+  }, {
+    "status" : "Review",
+    "cts" : 1727780640828,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a4"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727780620109,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a3"
+  }, {
+    "status" : "Review",
+    "cts" : 1727780522013,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "d"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727780408036,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a2"
+  }, {
+    "status" : "Review",
+    "cts" : 1727780265476,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727779999888,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a1"
+  }, {
+    "status" : "Review",
+    "cts" : 1727779859177,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1727779319270,
+    "lastModifiedBy" : "6655a103339aa715119d5a13",
+    "description" : "a"
+  }, {
+    "status" : "Draft",
+    "cts" : 1727778821355,
+    "lastModifiedBy" : "pranav A",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "ed30ae8dfc37979c91cf57a9267aae2569fae582",
+    "timeStamp" : 1727778821355,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "85d3efff2b8c52ad00f13c81edb90685e951d122",
+    "timeStamp" : 1727778864869,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "404270e152f5819f785f60f703ad5caafc148456",
+    "timeStamp" : 1727779263635,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "27b50af07a8d0f0358acf291f6d35f98b4a836d1",
+    "timeStamp" : 1727779306204,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "50a3d603bcec7c8282e606ffcbe8880c82cd9944",
+    "timeStamp" : 1727779971006,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "64c7c37f00c8e97c3e5dec280b1cdef3fd55119f",
+    "timeStamp" : 1727780580799,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "d377e89f2b477dcf9266295cfb2449bf35cc7ca3",
+    "timeStamp" : 1727780591276,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "7bda803001988f05de1964610ae52727bf1e900d",
+    "timeStamp" : 1727780610390,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "7abd851f489283ce0324ac5c24fa69b264ad5cae",
+    "timeStamp" : 1727780672385,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "41555d2c1d2b31efb7c747ec05441a1f170afc39",
+    "timeStamp" : 1727781977547,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 4
+  }, {
+    "commitId" : "f2e5a79661c9ba6df6820054e5e49d29121fa2f8",
+    "timeStamp" : 1729237069266,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 5
+  }, {
+    "commitId" : "e9cd073c4c9d4cc6c340cc159a94f1d80d841251",
+    "timeStamp" : 1729237094907,
+    "modifiedBy" : "pranav A",
+    "totalNodes" : 5
+  } ],
+  "virtualHostList" : [ {
+    "id" : "664c95008ac11a73dcf3eb8e",
+    "name" : "acme-team-gcp-stage",
+    "timeStamp" : 1729586292529
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "AcmeBank DEV",
+  "environmentId" : "6651dc284289865ae027e44e",
+  "deleted" : false,
+  "deployed" : false
+}
