@@ -3,7 +3,7 @@
   "cts" : 1730110438009,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1730110478166,
+  "mts" : 1730110583003,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "671f63e69d05ad36c5a6f02b",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "divakar v",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "01c03230-3348-4765-b9a4-173013d7cd6f",
     "target" : "e0b9da2b-1efe-46a8-bf88-4f8b55a3491b"
+  }, {
+    "source" : "v1",
+    "target" : "01c03230-3348-4765-b9a4-173013d7cd6f"
   } ],
   "vertexHashMap" : {
     "e0b9da2b-1efe-46a8-bf88-4f8b55a3491b" : {
@@ -32,6 +35,47 @@
           "type" : "JSON"
         }
       }
+    },
+    "01c03230-3348-4765-b9a4-173013d7cd6f" : {
+      "vertexId" : "01c03230-3348-4765-b9a4-173013d7cd6f",
+      "vertexType" : "TARGET",
+      "name" : "postman echo - GET",
+      "target" : {
+        "name" : "postman echo - GET",
+        "description" : "postman echo - GET",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "postman-echo.com",
+          "path" : "/get",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 200,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 403,
+          "headers" : {
+            "security-id" : "123",
+            "Content-Type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n    \"message\":\"Security check failed\"\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -50,6 +94,11 @@
   "changeLogs" : [ {
     "commitId" : "e9b0675ac146dd807c779d6cf47ad1f990182ffb",
     "timeStamp" : 1730110438009,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0d9f9066c9624051d07c31ff926a2b967cb6a20d",
+    "timeStamp" : 1730110478166,
     "modifiedBy" : "divakar v",
     "totalNodes" : 2
   } ],
