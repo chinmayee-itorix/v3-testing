@@ -3,7 +3,7 @@
   "cts" : 1730108644697,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1730109342131,
+  "mts" : 1730109966544,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "671f5ce49d05ad36c5a6eef5",
@@ -11,9 +11,9 @@
   "name" : "feel expression",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/feelExpression",
+  "pathArray" : [ "feelExpression" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -89,6 +89,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1730109953297,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1730109443026,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "a"
+  }, {
     "status" : "Draft",
     "cts" : 1730108644697,
     "lastModifiedBy" : "vidya wiz",
@@ -114,7 +124,13 @@
     "timeStamp" : 1730109313594,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "f0d3c5b2178a154856d3e9b519012d913b3a8c99",
+    "timeStamp" : 1730109342131,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
