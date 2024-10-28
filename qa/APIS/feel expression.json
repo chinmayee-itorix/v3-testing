@@ -3,7 +3,7 @@
   "cts" : 1730108644697,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1730108679919,
+  "mts" : 1730108798797,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "671f5ce49d05ad36c5a6eef5",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "4b5ca5f8-fabd-4ed9-8bc4-bb14ac69464a",
     "target" : "0abf779b-3350-47e5-9754-e5292ae7d40d"
+  }, {
+    "source" : "v1",
+    "target" : "4b5ca5f8-fabd-4ed9-8bc4-bb14ac69464a"
   } ],
   "vertexHashMap" : {
     "0abf779b-3350-47e5-9754-e5292ae7d40d" : {
@@ -32,6 +35,29 @@
           "type" : "JSON"
         }
       }
+    },
+    "4b5ca5f8-fabd-4ed9-8bc4-bb14ac69464a" : {
+      "vertexId" : "4b5ca5f8-fabd-4ed9-8bc4-bb14ac69464a",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "({0})",
+        "placeHolders" : [ {
+          "rule" : "EQUAL_TO",
+          "key" : "env",
+          "value" : "\"dev\"",
+          "valueDataType" : "STRING"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -50,6 +76,11 @@
   "changeLogs" : [ {
     "commitId" : "4e2085b6331b875bfa7afdf34dcec863764a4edd",
     "timeStamp" : 1730108644697,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "0bd400413f386db3c07582cf063f2c2d4d7ada2c",
+    "timeStamp" : 1730108679919,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
