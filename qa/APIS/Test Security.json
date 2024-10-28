@@ -3,7 +3,7 @@
   "cts" : 1730110438009,
   "createdUserName" : "divakar v",
   "modifiedUserName" : "divakar v",
-  "mts" : 1730110583003,
+  "mts" : 1730110611020,
   "createdBy" : "63cf749921c7bb55c7368952",
   "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "671f63e69d05ad36c5a6f02b",
@@ -31,8 +31,12 @@
       "imported" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "Content-type" : "application/json"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"message\":\"Success\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -101,6 +105,11 @@
     "timeStamp" : 1730110478166,
     "modifiedBy" : "divakar v",
     "totalNodes" : 2
+  }, {
+    "commitId" : "8d48594b503056ad301d72704c8153969b59702f",
+    "timeStamp" : 1730110583003,
+    "modifiedBy" : "divakar v",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
