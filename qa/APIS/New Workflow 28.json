@@ -3,7 +3,7 @@
   "cts" : 1730975415196,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1730975452722,
+  "mts" : 1730975834994,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "672c96b7082d5920f6f63cf7",
@@ -17,12 +17,45 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
+    "source" : "8c61430c-84d5-4da5-a4df-69de1c72f4eb",
+    "target" : "ce9a2077-854f-414b-a38b-32c36c98187f"
+  }, {
     "source" : "v1",
-    "target" : "41956f10-24b9-4d3e-baee-d332b01b8fbe"
+    "target" : "8c61430c-84d5-4da5-a4df-69de1c72f4eb"
   } ],
   "vertexHashMap" : {
-    "41956f10-24b9-4d3e-baee-d332b01b8fbe" : {
-      "vertexId" : "41956f10-24b9-4d3e-baee-d332b01b8fbe",
+    "8c61430c-84d5-4da5-a4df-69de1c72f4eb" : {
+      "vertexId" : "8c61430c-84d5-4da5-a4df-69de1c72f4eb",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "({0})",
+        "placeHolders" : [ {
+          "rule" : "EQUAL_TO",
+          "key" : "env",
+          "value" : "dev",
+          "valueDataType" : "STRING"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    },
+    "ce9a2077-854f-414b-a38b-32c36c98187f" : {
+      "vertexId" : "ce9a2077-854f-414b-a38b-32c36c98187f",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -32,13 +65,6 @@
           "type" : "JSON"
         }
       }
-    },
-    "v1" : {
-      "vertexId" : "v1",
-      "vertexType" : "START",
-      "name" : "Start",
-      "requestVariables" : [ ],
-      "imported" : true
     }
   },
   "statusHistory" : [ {
@@ -50,6 +76,11 @@
   "changeLogs" : [ {
     "commitId" : "f5d42cb9ef9029e9fbe4de099c692cb48340e23b",
     "timeStamp" : 1730975415196,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  }, {
+    "commitId" : "f645462f2beac0b561c62238c0de76b3f947d046",
+    "timeStamp" : 1730975452722,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
   } ],
