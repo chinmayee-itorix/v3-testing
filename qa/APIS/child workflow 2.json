@@ -3,17 +3,17 @@
   "cts" : 1730969762398,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1730969970599,
+  "mts" : 1730975315126,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "672c80a2d122eb133d0e2811",
   "revision" : 1,
   "name" : "child workflow 2",
-  "apiType" : "RESTAPI",
-  "apiMethod" : "GET",
+  "apiType" : "GRAPHQL",
+  "apiMethod" : "POST",
   "path" : "/childWorkflow2",
   "pathArray" : [ "childWorkflow2" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
@@ -80,6 +80,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1730973324403,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1730969981685,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "a"
+  }, {
     "status" : "Draft",
     "cts" : 1730969762398,
     "lastModifiedBy" : "vidya wiz",
@@ -95,10 +105,16 @@
     "timeStamp" : 1730969823509,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "7853d9dce43ca9782bdd329ceb758c638b8f4fa3",
+    "timeStamp" : 1730969970599,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
