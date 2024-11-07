@@ -1,0 +1,61 @@
+{
+  "id" : "672c80a4d122eb133d0e2812",
+  "cts" : 1730969762398,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1730969823509,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "672c80a2d122eb133d0e2811",
+  "revision" : 1,
+  "name" : "child workflow 2",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/childWorkflow2",
+  "pathArray" : [ "childWorkflow2" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "a38e8e60-78e3-446b-a319-9b8f8d1ef2aa"
+  } ],
+  "vertexHashMap" : {
+    "a38e8e60-78e3-446b-a319-9b8f8d1ef2aa" : {
+      "vertexId" : "a38e8e60-78e3-446b-a319-9b8f8d1ef2aa",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : true
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1730969762398,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "changeLogs" : [ {
+    "commitId" : "fd5da449b4a4aac1c86728c0f47d09b8466affd4",
+    "timeStamp" : 1730969762398,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deleted" : false,
+  "deployed" : false
+}
