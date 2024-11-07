@@ -3,7 +3,7 @@
   "cts" : 1730961790122,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1730961936592,
+  "mts" : 1730964901806,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "672c617e7283893db3de933c",
@@ -17,8 +17,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "beaaf2af-c9f4-426f-810c-955fcc456679",
     "target" : "2bf01765-60d5-47a5-bf7a-1f4c59692b3f"
+  }, {
+    "source" : "v1",
+    "target" : "beaaf2af-c9f4-426f-810c-955fcc456679"
   }, {
     "source" : "2bf01765-60d5-47a5-bf7a-1f4c59692b3f",
     "target" : "1364dafb-7fe1-4fd0-bdc8-ea7f301b9413"
@@ -35,6 +38,29 @@
           "type" : "JSON"
         }
       }
+    },
+    "beaaf2af-c9f4-426f-810c-955fcc456679" : {
+      "vertexId" : "beaaf2af-c9f4-426f-810c-955fcc456679",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "({0})",
+        "placeHolders" : [ {
+          "rule" : "EQUAL_TO",
+          "key" : "id",
+          "value" : "987654321",
+          "valueDataType" : "INTEGER"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -69,6 +95,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1730964873010,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1730961949287,
+    "lastModifiedBy" : "66d5b447299d441dfc15644a",
+    "description" : "a"
+  }, {
+    "status" : "Review",
     "cts" : 1730961901373,
     "lastModifiedBy" : "66d5b447299d441dfc15644a",
     "description" : "Proxy undeploy"
@@ -91,6 +127,11 @@
   }, {
     "commitId" : "370b2bb26e35b991e19ba299cad3d21a29ac501c",
     "timeStamp" : 1730961864285,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
+  }, {
+    "commitId" : "9485a4bc4857d8cb0d8c319c487dec7e93d5a5cc",
+    "timeStamp" : 1730961936592,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
   } ],
