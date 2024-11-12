@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731394289802,
+  "mts" : 1731394424320,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -19,12 +19,47 @@
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
     "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
-    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
+    "target" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf"
   }, {
     "source" : "v1",
     "target" : "69b06ef6-2fbc-4813-9ef8-da75537ac570"
+  }, {
+    "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
   } ],
   "vertexHashMap" : {
+    "ea9ca780-c8c9-4683-9764-f276a9d53bdf" : {
+      "vertexId" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "salaryEligibility",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "54229e0e-b925-4c86-80fe-cdff9f9846a4" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false
+    },
     "54229e0e-b925-4c86-80fe-cdff9f9846a4" : {
       "vertexId" : "54229e0e-b925-4c86-80fe-cdff9f9846a4",
       "vertexType" : "STOP",
@@ -113,10 +148,15 @@
     "timeStamp" : 1731394177108,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "d6d75af0514683d3a55ad7e173c1cfa846f9f910",
+    "timeStamp" : 1731394289802,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
