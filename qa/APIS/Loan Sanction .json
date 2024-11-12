@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731395935009,
+  "mts" : 1731396066619,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -33,6 +33,9 @@
     "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
     "target" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf"
   }, {
+    "source" : "cff3e8c2-7342-41f6-be9d-c824e3a69690",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
+  }, {
     "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
     "target" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069"
   }, {
@@ -43,7 +46,7 @@
     "target" : "9204d273-13a9-4f06-9082-b80cce37814c"
   }, {
     "source" : "9204d273-13a9-4f06-9082-b80cce37814c",
-    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
+    "target" : "cff3e8c2-7342-41f6-be9d-c824e3a69690"
   }, {
     "source" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
     "target" : "75a99122-e740-4ef4-87ce-fb93a669b19d"
@@ -162,6 +165,44 @@
           "queryParams" : [ ],
           "body" : {
             "data" : "{{{customerData}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "cff3e8c2-7342-41f6-be9d-c824e3a69690" : {
+      "vertexId" : "cff3e8c2-7342-41f6-be9d-c824e3a69690",
+      "vertexType" : "TARGET",
+      "name" : "Sanction-Loan",
+      "target" : {
+        "name" : "Sanction-Loan",
+        "description" : "Sanction-Loan",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "loan.com",
+          "path" : "/sanction/loan",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"eligiblity\":{{{eligibility}}},\n    \"ctc\":{{{ctc}}},\n    \"category\":{{{ctcCategory}}},\n    \"history\":{{{loanAmount}}}\n}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -486,10 +527,15 @@
     "timeStamp" : 1731395363405,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 10
+  }, {
+    "commitId" : "3d343faccbae9b9c65b37e2ad6c74ab019d70af5",
+    "timeStamp" : 1731395935009,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 11
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
