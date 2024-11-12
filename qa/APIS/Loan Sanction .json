@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731395363405,
+  "mts" : 1731395935009,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -18,9 +18,6 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "3735a0a4-465a-4b98-a0d7-fb1da8000474",
-    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
-  }, {
     "source" : "2898739e-be89-44cf-b146-1cb7455393bd",
     "target" : "3735a0a4-465a-4b98-a0d7-fb1da8000474"
   }, {
@@ -41,6 +38,12 @@
   }, {
     "source" : "v1",
     "target" : "69b06ef6-2fbc-4813-9ef8-da75537ac570"
+  }, {
+    "source" : "3735a0a4-465a-4b98-a0d7-fb1da8000474",
+    "target" : "9204d273-13a9-4f06-9082-b80cce37814c"
+  }, {
+    "source" : "9204d273-13a9-4f06-9082-b80cce37814c",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
   }, {
     "source" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
     "target" : "75a99122-e740-4ef4-87ce-fb93a669b19d"
@@ -366,6 +369,50 @@
         }
       },
       "imported" : false
+    },
+    "9204d273-13a9-4f06-9082-b80cce37814c" : {
+      "vertexId" : "9204d273-13a9-4f06-9082-b80cce37814c",
+      "vertexType" : "TARGET",
+      "name" : "credit history",
+      "target" : {
+        "name" : "credit history",
+        "description" : "credit hiostory",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "credit.com",
+          "path" : "/v1/credit-history",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "loanAmount",
+            "reference" : "body",
+            "value" : "$.amount",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -434,10 +481,15 @@
     "timeStamp" : 1731395265407,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 9
+  }, {
+    "commitId" : "ac61ad3d14bd225a19330a23c414a86ba9dfe504",
+    "timeStamp" : 1731395363405,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 10
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
