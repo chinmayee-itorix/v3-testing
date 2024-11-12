@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731394497037,
+  "mts" : 1731394625896,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -18,8 +18,14 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
+    "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
+    "target" : "d68319a5-badc-4c1b-82d4-5f63cce5df55"
+  }, {
     "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
     "target" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf"
+  }, {
+    "source" : "d68319a5-badc-4c1b-82d4-5f63cce5df55",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
   }, {
     "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
     "target" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069"
@@ -27,13 +33,58 @@
     "source" : "v1",
     "target" : "69b06ef6-2fbc-4813-9ef8-da75537ac570"
   }, {
-    "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
-    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
-  }, {
     "source" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
     "target" : "75a99122-e740-4ef4-87ce-fb93a669b19d"
   } ],
   "vertexHashMap" : {
+    "d68319a5-badc-4c1b-82d4-5f63cce5df55" : {
+      "vertexId" : "d68319a5-badc-4c1b-82d4-5f63cce5df55",
+      "vertexType" : "TARGET",
+      "name" : "CTC",
+      "target" : {
+        "name" : "CTC",
+        "description" : "CTC",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "ctc.com",
+          "path" : "/v1/ctc-check",
+          "headerParams" : [ ],
+          "queryParams" : [ {
+            "name" : "CTC",
+            "value" : "11L"
+          } ],
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "ctcCategory",
+            "reference" : "body",
+            "value" : "$.category",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
     "75a99122-e740-4ef4-87ce-fb93a669b19d" : {
       "vertexId" : "75a99122-e740-4ef4-87ce-fb93a669b19d",
       "vertexType" : "STOP",
@@ -69,7 +120,7 @@
             }
           }
         },
-        "flowVertexes" : [ "54229e0e-b925-4c86-80fe-cdff9f9846a4" ]
+        "flowVertexes" : [ "d68319a5-badc-4c1b-82d4-5f63cce5df55" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -230,10 +281,15 @@
     "timeStamp" : 1731394424320,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 4
+  }, {
+    "commitId" : "2ca4f9cf3e2aae69a9f5656ef18a9bda04c12716",
+    "timeStamp" : 1731394497037,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 6
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
