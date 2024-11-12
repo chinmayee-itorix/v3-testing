@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731394625896,
+  "mts" : 1731394950245,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -18,20 +18,23 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
+    "source" : "d68319a5-badc-4c1b-82d4-5f63cce5df55",
+    "target" : "cd151633-37a4-4903-ac5a-f5520f18aada"
+  }, {
     "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
     "target" : "d68319a5-badc-4c1b-82d4-5f63cce5df55"
   }, {
     "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
     "target" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf"
   }, {
-    "source" : "d68319a5-badc-4c1b-82d4-5f63cce5df55",
-    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
-  }, {
     "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
     "target" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069"
   }, {
     "source" : "v1",
     "target" : "69b06ef6-2fbc-4813-9ef8-da75537ac570"
+  }, {
+    "source" : "cd151633-37a4-4903-ac5a-f5520f18aada",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
   }, {
     "source" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
     "target" : "75a99122-e740-4ef4-87ce-fb93a669b19d"
@@ -72,6 +75,47 @@
             "source" : "raw",
             "hide" : false
           } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "cd151633-37a4-4903-ac5a-f5520f18aada" : {
+      "vertexId" : "cd151633-37a4-4903-ac5a-f5520f18aada",
+      "vertexType" : "TARGET",
+      "name" : "CreditScore",
+      "target" : {
+        "name" : "CreditScore",
+        "description" : "CreditScore",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "credit.com",
+          "path" : "/v1/credit",
+          "headerParams" : [ {
+            "name" : "",
+            "value" : ""
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"category\":{{{ctcCategor}}},\n    \"eleigibility\":{{{eligibilty}}}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -286,6 +330,11 @@
     "timeStamp" : 1731394497037,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 6
+  }, {
+    "commitId" : "0e9e9006f2a70ace86d5c91a2e9248fd5ac039b8",
+    "timeStamp" : 1731394625896,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 7
   } ],
   "enableTracing" : false,
   "environmentName" : "",
