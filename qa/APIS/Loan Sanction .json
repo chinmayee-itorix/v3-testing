@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731396202900,
+  "mts" : 1731396276740,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -161,7 +161,8 @@
       "proxyResponse" : {
         "statusCode" : 200,
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"Message\":\"Your Loan has been sacntioned\"\n}",
+          "type" : "json"
         }
       }
     },
@@ -578,6 +579,11 @@
     "timeStamp" : 1731396066619,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 12
+  }, {
+    "commitId" : "e20c44b3fe1fae837dc112e9db3e338b7538516d",
+    "timeStamp" : 1731396202900,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 13
   } ],
   "enableTracing" : false,
   "environmentName" : "",
