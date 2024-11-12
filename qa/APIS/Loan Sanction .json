@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731394950245,
+  "mts" : 1731395001541,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -115,7 +115,14 @@
         },
         "response" : {
           "statusCode" : 200,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "creditScore",
+            "reference" : "body",
+            "value" : "$.credcore",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -335,6 +342,11 @@
     "timeStamp" : 1731394625896,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 7
+  }, {
+    "commitId" : "c73c15ba09f07ef4e17ae85fa7f7610a5e623151",
+    "timeStamp" : 1731394950245,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 8
   } ],
   "enableTracing" : false,
   "environmentName" : "",
