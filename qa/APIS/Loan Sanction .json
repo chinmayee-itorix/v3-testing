@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731392271338,
+  "mts" : 1731394177108,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -18,8 +18,11 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
-    "source" : "v1",
+    "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
     "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
+  }, {
+    "source" : "v1",
+    "target" : "69b06ef6-2fbc-4813-9ef8-da75537ac570"
   } ],
   "vertexHashMap" : {
     "54229e0e-b925-4c86-80fe-cdff9f9846a4" : {
@@ -33,6 +36,53 @@
           "type" : "JSON"
         }
       }
+    },
+    "69b06ef6-2fbc-4813-9ef8-da75537ac570" : {
+      "vertexId" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
+      "vertexType" : "TARGET",
+      "name" : "Salary Veriification",
+      "target" : {
+        "name" : "Salary Veriification",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "salary.com",
+          "path" : "/v1/salary/verify",
+          "headerParams" : [ {
+            "name" : "jesssiond",
+            "value" : "123123123"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    \"salary\":30,\n    \"ctc\":\"11LPA\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "eligbile",
+            "reference" : "body",
+            "value" : "$.eligible",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false
+          } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -53,10 +103,15 @@
     "timeStamp" : 1731391992316,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "5473c3c885fca4609fbd0f7ffbf732c73b469f27",
+    "timeStamp" : 1731392271338,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 2
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
