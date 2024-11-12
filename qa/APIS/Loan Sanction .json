@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731395265407,
+  "mts" : 1731395363405,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -18,6 +18,12 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
+    "source" : "3735a0a4-465a-4b98-a0d7-fb1da8000474",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
+  }, {
+    "source" : "2898739e-be89-44cf-b146-1cb7455393bd",
+    "target" : "3735a0a4-465a-4b98-a0d7-fb1da8000474"
+  }, {
     "source" : "cd151633-37a4-4903-ac5a-f5520f18aada",
     "target" : "2898739e-be89-44cf-b146-1cb7455393bd"
   }, {
@@ -26,9 +32,6 @@
   }, {
     "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
     "target" : "d68319a5-badc-4c1b-82d4-5f63cce5df55"
-  }, {
-    "source" : "2898739e-be89-44cf-b146-1cb7455393bd",
-    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
   }, {
     "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
     "target" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf"
@@ -126,6 +129,44 @@
             "source" : "raw",
             "hide" : false
           } ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
+    },
+    "3735a0a4-465a-4b98-a0d7-fb1da8000474" : {
+      "vertexId" : "3735a0a4-465a-4b98-a0d7-fb1da8000474",
+      "vertexType" : "TARGET",
+      "name" : "CustomerDetails",
+      "target" : {
+        "name" : "CustomerDetails",
+        "description" : "CustomerDetails",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "customer.com",
+          "path" : "/v1/customer",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{customerData}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
         },
         "timeout" : 0,
         "continueOnError" : false,
@@ -388,10 +429,15 @@
     "timeStamp" : 1731395201325,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 9
+  }, {
+    "commitId" : "7bd827c81ee23fbfe7035c54b7c0e3f2ec24b29a",
+    "timeStamp" : 1731395265407,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 9
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
