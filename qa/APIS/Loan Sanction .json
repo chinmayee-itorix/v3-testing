@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731395201325,
+  "mts" : 1731395265407,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -212,7 +212,7 @@
         "errorResponse" : {
           "statusCode" : 200,
           "body" : {
-            "data" : "",
+            "data" : "{\n    \"Message\":\"Credit score is not approvable or low\"\n}",
             "type" : "json"
           }
         }
@@ -383,10 +383,15 @@
     "timeStamp" : 1731395156743,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 8
+  }, {
+    "commitId" : "cfad5720302d3f7718631d9e3fbca2f05d0e874d",
+    "timeStamp" : 1731395201325,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 9
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
