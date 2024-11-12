@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731394424320,
+  "mts" : 1731394497037,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -21,13 +21,31 @@
     "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
     "target" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf"
   }, {
+    "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
+    "target" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069"
+  }, {
     "source" : "v1",
     "target" : "69b06ef6-2fbc-4813-9ef8-da75537ac570"
   }, {
     "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
     "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
+  }, {
+    "source" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
+    "target" : "75a99122-e740-4ef4-87ce-fb93a669b19d"
   } ],
   "vertexHashMap" : {
+    "75a99122-e740-4ef4-87ce-fb93a669b19d" : {
+      "vertexId" : "75a99122-e740-4ef4-87ce-fb93a669b19d",
+      "vertexType" : "STOP",
+      "name" : "Negative Response",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
     "ea9ca780-c8c9-4683-9764-f276a9d53bdf" : {
       "vertexId" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
       "vertexType" : "CONDITIONAL_FLOW",
@@ -56,7 +74,8 @@
         "condition" : "else",
         "assertion" : {
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" ]
       } ],
       "imported" : false
     },
@@ -125,6 +144,59 @@
       "name" : "Start",
       "requestVariables" : [ ],
       "imported" : true
+    },
+    "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" : {
+      "vertexId" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
+      "vertexType" : "TARGET",
+      "name" : "listAccounts",
+      "target" : {
+        "name" : "listAccounts",
+        "description" : "Obtain a list of accounts",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "abcd.com",
+          "path" : "/v1/accountlist/banking/accounts",
+          "headerParams" : [ {
+            "name" : "openStatus",
+            "value" : ""
+          }, {
+            "name" : "accountType",
+            "value" : ""
+          }, {
+            "name" : "isOwned",
+            "value" : ""
+          }, {
+            "name" : "x-v",
+            "value" : ""
+          }, {
+            "name" : "participantId",
+            "value" : ""
+          }, {
+            "name" : "accept",
+            "value" : ""
+          } ],
+          "queryParams" : [ ],
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     }
   },
   "statusHistory" : [ {
@@ -153,6 +225,11 @@
     "timeStamp" : 1731394289802,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 3
+  }, {
+    "commitId" : "8b61e6259f445d217a7976d46b6d93dc11569d7b",
+    "timeStamp" : 1731394424320,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 4
   } ],
   "enableTracing" : false,
   "environmentName" : "",
