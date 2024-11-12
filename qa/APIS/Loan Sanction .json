@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731394177108,
+  "mts" : 1731394289802,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -64,7 +64,7 @@
         "response" : {
           "statusCode" : 200,
           "variables" : [ {
-            "name" : "eligbile",
+            "name" : "salaryEligibility",
             "reference" : "body",
             "value" : "$.eligible",
             "active" : true,
@@ -108,6 +108,11 @@
     "timeStamp" : 1731392271338,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 2
+  }, {
+    "commitId" : "17dc62e9d6dd332fdddc9d83111939f9eefa3494",
+    "timeStamp" : 1731394177108,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 3
   } ],
   "enableTracing" : false,
   "environmentName" : "",
