@@ -1,0 +1,54 @@
+{
+  "cts" : 1731391992316,
+  "createdUserName" : "vidya wiz",
+  "modifiedUserName" : "vidya wiz",
+  "mts" : 1731391992316,
+  "createdBy" : "66d5b447299d441dfc15644a",
+  "modifiedBy" : "66d5b447299d441dfc15644a",
+  "proxyId" : "6732f1f83bf1244914c7cd47",
+  "revision" : 1,
+  "name" : "New Workflow 29",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "vidya wiz",
+  "edgeSet" : [ {
+    "source" : "v1",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
+  } ],
+  "vertexHashMap" : {
+    "54229e0e-b925-4c86-80fe-cdff9f9846a4" : {
+      "vertexId" : "54229e0e-b925-4c86-80fe-cdff9f9846a4",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ ],
+      "imported" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1731391992316,
+    "lastModifiedBy" : "vidya wiz",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "deployed" : false,
+  "deleted" : false
+}
