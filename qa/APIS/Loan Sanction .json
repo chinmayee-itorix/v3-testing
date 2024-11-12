@@ -3,7 +3,7 @@
   "cts" : 1731391992316,
   "createdUserName" : "vidya wiz",
   "modifiedUserName" : "vidya wiz",
-  "mts" : 1731395156743,
+  "mts" : 1731395201325,
   "createdBy" : "66d5b447299d441dfc15644a",
   "modifiedBy" : "66d5b447299d441dfc15644a",
   "proxyId" : "6732f1f83bf1244914c7cd47",
@@ -18,11 +18,17 @@
   "locked" : true,
   "lockedBy" : "vidya wiz",
   "edgeSet" : [ {
+    "source" : "cd151633-37a4-4903-ac5a-f5520f18aada",
+    "target" : "2898739e-be89-44cf-b146-1cb7455393bd"
+  }, {
     "source" : "d68319a5-badc-4c1b-82d4-5f63cce5df55",
     "target" : "cd151633-37a4-4903-ac5a-f5520f18aada"
   }, {
     "source" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
     "target" : "d68319a5-badc-4c1b-82d4-5f63cce5df55"
+  }, {
+    "source" : "2898739e-be89-44cf-b146-1cb7455393bd",
+    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
   }, {
     "source" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
     "target" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf"
@@ -32,9 +38,6 @@
   }, {
     "source" : "v1",
     "target" : "69b06ef6-2fbc-4813-9ef8-da75537ac570"
-  }, {
-    "source" : "cd151633-37a4-4903-ac5a-f5520f18aada",
-    "target" : "54229e0e-b925-4c86-80fe-cdff9f9846a4"
   }, {
     "source" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
     "target" : "75a99122-e740-4ef4-87ce-fb93a669b19d"
@@ -192,6 +195,29 @@
           "type" : "JSON"
         }
       }
+    },
+    "2898739e-be89-44cf-b146-1cb7455393bd" : {
+      "vertexId" : "2898739e-be89-44cf-b146-1cb7455393bd",
+      "vertexType" : "ASSERTION",
+      "name" : "Assertion",
+      "assertion" : {
+        "expression" : "({0})",
+        "placeHolders" : [ {
+          "rule" : "GREATER_THAN",
+          "key" : "creditScore",
+          "value" : "600",
+          "valueDataType" : "INTEGER"
+        } ],
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false
     },
     "69b06ef6-2fbc-4813-9ef8-da75537ac570" : {
       "vertexId" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
@@ -352,10 +378,15 @@
     "timeStamp" : 1731395001541,
     "modifiedBy" : "vidya wiz",
     "totalNodes" : 8
+  }, {
+    "commitId" : "45352239495e62ea7265d59711c50a41622e2679",
+    "timeStamp" : 1731395156743,
+    "modifiedBy" : "vidya wiz",
+    "totalNodes" : 8
   } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
